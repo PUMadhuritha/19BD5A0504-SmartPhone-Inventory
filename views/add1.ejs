@@ -1,0 +1,185 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>SmartPhones</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  
+ 
+</head>
+<body class="hold-transition sidebar-mini">
+	
+	<div class="wrapper">
+		
+		<!-- Navbar -->
+		<nav class="main-header navbar navbar-expand navbar-white navbar-light">
+		<!-- Left navbar links -->
+			<ul class="navbar-nav">
+				<li class="nav-item">
+				<a class="nav-link" data-widget="pushmenu" href="#" role="button"> 
+                                           <i class="fas fa-bars"></i></a>
+				</li>
+				<li class="nav-item d-none d-sm-inline-block">
+				<a href="/" class="nav-link">Home</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- /.navbar -->
+
+		
+		
+		<aside class="main-sidebar sidebar-dark-primary elevation-4">
+		<!-- Brand Logo -->
+			<a href="#" class="brand-link">
+			  <img src="phone1.jpg"
+				   alt=""
+				   class="brand-image img-circle elevation-3">
+			  <span class="brand-text font-weight-light">SmartPhones</span>
+			</a>
+			<!-- Sidebar -->
+			<div class="sidebar">
+
+				<!-- Sidebar Menu -->
+			<nav class="mt-2">
+				<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <li class="nav-item">
+            <a href="/home" class="nav-link">
+            <i class="nav-icon far fa-circle text-info"></i>
+            <p class="text">Home</p>
+            </a>
+          </li>
+				<li class="nav-item">
+					<a href="/create" class="nav-link">
+					<i class="nav-icon far fa-circle text-info"></i>
+					<p>Add Product</p>
+					</a>
+				</li>
+        <li class="nav-item">
+					<a href="/salesdetails" class="nav-link">
+					<i class="nav-icon far fa-circle text-info"></i>
+					<p class="text">Product Details</p>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/updateproduct" class="nav-link">
+					<i class="nav-icon far fa-circle text-info"></i>
+					<p class="text">Update Product</p>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="/deleteproduct" class="nav-link">
+					<i class="nav-icon far fa-circle text-info"></i>
+					<p class="text">Delete Product</p>
+					</a>
+				</li>
+				
+				</ul>
+			</nav>
+			<!-- /.sidebar-menu -->
+			
+			</div>
+			<!-- /.sidebar -->
+		</aside>
+		
+
+        <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>SmartPhones Inventory Management</h1>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+		
+    <section class="content">
+       
+                <!-- /.card -->
+            <!-- Horizontal Form -->
+            <div class="container-fluid">
+                <div class="row">
+                  <!-- left column -->
+                  <div class="col-md-6">
+                    <!-- general form elements -->
+                    <div class="card card-info">
+                      <div class="card-header">
+                        <h3 class="card-title">Add Product Details</h3>
+                      </div>
+                <form method="post" action="/AddData" class="form-horizontal">
+                  <div class="card-body">
+                    <div class="form-group row">
+                      <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control"  placeholder="ModelName" name="ModelName">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputEmail3" class="col-sm-2 col-form-label">Cost</label>
+                      <div class="col-sm-10">
+                        <input type="number" class="form-control"  placeholder="Cost" name="Cost">
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Storage</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control"  placeholder="Storage" name="Storage">
+                        </div>
+                    </div>
+                    
+
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label" >Battery</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control"  placeholder="Battery" name="Battery">
+                        </div>
+                      </div>
+
+                      <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Camera</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control"  placeholder="Camera" name="Camera">
+                        </div>
+                      </div>
+
+                      <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Quantity</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control"  placeholder="Quantity" name="Quantity">
+                        </div>
+                      </div>
+
+                  </div>
+                  <!-- /.card-body -->
+                  <div class="card-footer">
+                    <button type="submit" class="btn btn-info">Submit</button>
+                    <button type="submit" class="btn btn-default float-right">Cancel</button>
+                  </div>
+                  <!-- /.card-footer -->
+                </form>
+              </div>
+              <!-- /.card -->
+              
+  
+            </div>
+			</section>
+		</div>
+
+
+		
+		
+	</div>
+</body>
+</html>
